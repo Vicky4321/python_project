@@ -17,6 +17,13 @@ class Member(models.Model):
     hobby = models.CharField(max_length=40)
     is_male = models.BooleanField(default=True)
 
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return redirect('weapp:index')
+
+
 
 
 
