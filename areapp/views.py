@@ -9,7 +9,7 @@ from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 class MemberListView(ListView):
 
     model = Member
-    template_name= 'weapp/index.html',
+    template_name= 'areapp/index.html',
     context_object_name = 'profiles'
     ordering = ['names']
 
